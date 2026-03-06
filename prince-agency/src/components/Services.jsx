@@ -26,16 +26,22 @@ export default function Services() {
       className="flex min-h-[94svh] items-center px-6 py-4 sm:px-10 sm:py-6 lg:px-14"
     >
       <div className="mx-auto w-full">
-        <p className="text-base font-semibold uppercase tracking-[0.16em] text-[#1b7d79] sm:text-lg">
+        <p className="reveal text-base font-semibold uppercase tracking-[0.16em] text-[#1b7d79] sm:text-lg">
           What We Do
         </p>
-        <h2 className="mt-3 max-w-4xl text-5xl font-bold leading-tight text-[#0f2027] sm:text-6xl lg:text-7xl">
+        <h2 className="reveal mt-3 max-w-4xl text-5xl font-bold leading-tight text-[#0f2027] sm:text-6xl lg:text-7xl">
           Focused services built to move your business forward.
         </h2>
-        <p className="mt-5 max-w-4xl text-xl leading-relaxed text-[#10242b]/75 lg:text-2xl">
+        <p className="reveal mt-5 max-w-4xl text-xl leading-relaxed text-[#10242b]/75 lg:text-2xl">
           We combine strategy, design, and engineering to deliver clear,
           measurable results across your digital presence.
         </p>
+
+        <div className="reveal mt-6 flex flex-wrap gap-3 text-sm font-medium text-[#10242b]/70 sm:text-base">
+          <span className="rounded-full border border-[#10242b]/15 bg-white/80 px-4 py-2">Fast delivery cycles</span>
+          <span className="rounded-full border border-[#10242b]/15 bg-white/80 px-4 py-2">Performance-first engineering</span>
+          <span className="rounded-full border border-[#10242b]/15 bg-white/80 px-4 py-2">Conversion-centered UX</span>
+        </div>
 
         <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => (
