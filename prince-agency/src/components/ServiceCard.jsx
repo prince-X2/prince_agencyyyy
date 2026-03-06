@@ -54,14 +54,14 @@ export default function ServiceCard({ title, description }) {
   return (
     <div
       ref={cardRef}
-      className="group reveal card-float h-full rounded-2xl border border-[#10242b]/10 bg-white/85 p-8 text-left shadow-[0_18px_44px_-26px_rgba(16,36,43,0.58)] backdrop-blur transition duration-300 hover:border-[#1b7d79]/45"
+      className="group reveal card-float h-full rounded-2xl border border-[#10242b]/10 bg-white/85 p-5 text-left shadow-[0_18px_44px_-26px_rgba(16,36,43,0.58)] backdrop-blur transition duration-300 hover:border-[#1b7d79]/45 sm:p-8"
       onMouseEnter={handleEnter}
       onMouseMove={handleMove}
       onMouseLeave={handleLeave}
     >
       <div className="mb-5 h-2 w-16 rounded-full bg-[#ff8a4c] transition group-hover:w-24 group-hover:bg-[#1ca49f]" />
-      <h3 className="text-3xl font-bold text-[#0f2027] lg:text-4xl">{title}</h3>
-      <p className="mt-3 text-xl leading-relaxed text-[#10242b]/75">{description}</p>
+      <h3 className="text-2xl font-bold text-[#0f2027] sm:text-3xl lg:text-4xl">{title}</h3>
+      <p className="mt-3 text-base leading-relaxed text-[#10242b]/75 sm:text-xl">{description}</p>
     </div>
   );
 }

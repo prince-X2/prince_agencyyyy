@@ -50,17 +50,17 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="flex min-h-[94svh] items-center px-6 py-4 sm:px-10 sm:py-6 lg:px-14"
+      className="flex min-h-[94svh] items-center px-4 py-14 sm:px-10 sm:py-6 lg:px-14"
     >
-      <div className="mx-auto grid w-full gap-12 rounded-3xl border border-[#10242b]/10 bg-white/75 p-10 shadow-[0_28px_56px_-35px_rgba(16,36,43,0.85)] backdrop-blur md:grid-cols-2 md:p-14">
+      <div className="mx-auto grid w-full gap-8 rounded-2xl border border-[#10242b]/10 bg-white/75 p-5 shadow-[0_28px_56px_-35px_rgba(16,36,43,0.85)] backdrop-blur sm:gap-12 sm:rounded-3xl sm:p-10 md:grid-cols-2 md:p-14">
         <div>
           <p className="reveal text-base font-semibold uppercase tracking-[0.16em] text-[#1b7d79] sm:text-lg">
             Contact
           </p>
-          <h2 className="reveal mt-3 text-5xl font-bold leading-tight text-[#0f2027] sm:text-6xl lg:text-7xl">
+          <h2 className="reveal mt-3 text-3xl font-bold leading-tight text-[#0f2027] sm:text-6xl lg:text-7xl">
             Tell us what you are building.
           </h2>
-          <p className="reveal mt-5 text-xl leading-relaxed text-[#10242b]/75 lg:text-2xl">
+          <p className="reveal mt-5 text-base leading-relaxed text-[#10242b]/75 sm:text-xl lg:text-2xl">
             Share your goals and timeline. We will respond with a clear next
             step and project estimate.
           </p>
@@ -70,7 +70,7 @@ export default function Contact() {
           <input
             type="text"
             placeholder="Your Name"
-            className="w-full rounded-xl border border-[#10242b]/15 bg-white/90 px-5 py-4 text-xl text-[#10242b] placeholder:text-[#10242b]/45 focus:border-[#1b7d79] focus:outline-none focus:ring-2 focus:ring-[#1b7d79]/20"
+            className="w-full rounded-xl border border-[#10242b]/15 bg-white/90 px-4 py-3 text-base text-[#10242b] placeholder:text-[#10242b]/45 focus:border-[#1b7d79] focus:outline-none focus:ring-2 focus:ring-[#1b7d79]/20 sm:px-5 sm:py-4 sm:text-xl"
             value={form.name}
             onChange={(e) => handleChange("name", e.target.value)}
           />
@@ -79,7 +79,7 @@ export default function Contact() {
           <input
             type="email"
             placeholder="Your Email"
-            className="w-full rounded-xl border border-[#10242b]/15 bg-white/90 px-5 py-4 text-xl text-[#10242b] placeholder:text-[#10242b]/45 focus:border-[#1b7d79] focus:outline-none focus:ring-2 focus:ring-[#1b7d79]/20"
+            className="w-full rounded-xl border border-[#10242b]/15 bg-white/90 px-4 py-3 text-base text-[#10242b] placeholder:text-[#10242b]/45 focus:border-[#1b7d79] focus:outline-none focus:ring-2 focus:ring-[#1b7d79]/20 sm:px-5 sm:py-4 sm:text-xl"
             value={form.email}
             onChange={(e) => handleChange("email", e.target.value)}
           />
@@ -87,7 +87,7 @@ export default function Contact() {
 
           <textarea
             placeholder="Your Message"
-            className="w-full resize-none rounded-xl border border-[#10242b]/15 bg-white/90 px-5 py-4 text-xl text-[#10242b] placeholder:text-[#10242b]/45 focus:border-[#1b7d79] focus:outline-none focus:ring-2 focus:ring-[#1b7d79]/20"
+            className="w-full resize-none rounded-xl border border-[#10242b]/15 bg-white/90 px-4 py-3 text-base text-[#10242b] placeholder:text-[#10242b]/45 focus:border-[#1b7d79] focus:outline-none focus:ring-2 focus:ring-[#1b7d79]/20 sm:px-5 sm:py-4 sm:text-xl"
             rows="6"
             maxLength={500}
             value={form.message}
@@ -99,7 +99,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full rounded-xl bg-[#10242b] py-4 text-xl font-semibold text-white transition hover:bg-[#0c1a20] disabled:cursor-not-allowed disabled:bg-[#10242b]/60"
+            className="w-full rounded-xl bg-[#10242b] py-3 text-lg font-semibold text-white transition hover:bg-[#0c1a20] disabled:cursor-not-allowed disabled:bg-[#10242b]/60 sm:py-4 sm:text-xl"
           >
             {isSubmitting ? "Sending..." : "Send Message"}
           </button>

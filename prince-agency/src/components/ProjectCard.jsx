@@ -58,13 +58,13 @@ export default function ProjectCard({ title, image }) {
         alt={title}
         width={400}
         height={300}
-        className="h-80 w-full object-cover lg:h-[22rem]"
+        className="h-64 w-full object-cover sm:h-80 lg:h-[22rem]"
       />
       <div className="absolute inset-x-4 bottom-4 rounded-xl bg-[#10242b]/82 px-5 py-4 text-left text-white shadow-[0_12px_24px_-16px_rgba(0,0,0,0.85)] backdrop-blur">
         <p className="text-sm font-medium uppercase tracking-wider text-[#f3f1ea]/70">
           Case Study
         </p>
-        <h3 className="mt-2 text-2xl font-semibold lg:text-3xl">{title}</h3>
+        <h3 className="mt-2 text-xl font-semibold sm:text-2xl lg:text-3xl">{title}</h3>
       </div>
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.28),transparent_56%)] opacity-0 transition group-hover:opacity-100" />
     </div>

@@ -28,6 +28,18 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
 }
 
 /* BODY */
@@ -336,6 +348,10 @@ main > section::before {
 /* responsive */
 
 @media (max-width: 768px) {
+  #home .dynamic-word {
+    display: block;
+    margin-top: 0.25rem;
+  }
 
   main > section::before {
     left: 1rem;
