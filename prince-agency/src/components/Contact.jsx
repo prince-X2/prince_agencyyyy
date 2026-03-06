@@ -50,7 +50,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="flex min-h-[94svh] items-center px-4 py-14 sm:px-10 sm:py-6 lg:px-14"
+      className="flex items-center px-4 py-14 sm:min-h-[94svh] sm:px-10 sm:py-6 lg:px-14"
     >
       <div className="mx-auto grid w-full gap-8 rounded-2xl border border-[#10242b]/10 bg-white/75 p-5 shadow-[0_28px_56px_-35px_rgba(16,36,43,0.85)] backdrop-blur sm:gap-12 sm:rounded-3xl sm:p-10 md:grid-cols-2 md:p-14">
         <div>

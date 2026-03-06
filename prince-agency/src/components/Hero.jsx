@@ -32,14 +32,14 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-svh overflow-hidden px-4 py-14 sm:px-10 sm:py-24 lg:px-14"
+      className="relative min-h-screen overflow-hidden px-4 py-14 sm:min-h-svh sm:px-10 sm:py-24 lg:px-14"
     >
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-16 -left-20 h-72 w-72 rounded-full bg-[#1ca49f]/20 blur-3xl" />
         <div className="absolute right-0 top-32 h-80 w-80 rounded-full bg-[#ff8a4c]/20 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto flex min-h-[72svh] w-full flex-col justify-center">
+      <div className="relative mx-auto flex w-full flex-col justify-center sm:min-h-[72svh]">
         <p className="reveal mb-6 inline-flex w-fit rounded-full border border-[#10242b]/20 bg-white/70 px-4 py-2 text-xs font-semibold tracking-[0.14em] text-[#10242b]/80 shadow-[0_12px_26px_-22px_rgba(16,36,43,0.9)] backdrop-blur sm:mb-8 sm:px-7 sm:py-3 sm:text-lg">
           Digital Studio For Bold Brands
         </p>

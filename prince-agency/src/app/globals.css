@@ -31,8 +31,13 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  max-width: 100%;
+}
+
 * {
   box-sizing: border-box;
+  min-width: 0;
 }
 
 img,
@@ -351,6 +356,13 @@ main > section::before {
   #home .dynamic-word {
     display: block;
     margin-top: 0.25rem;
+  }
+
+  #home h1,
+  #services h2,
+  #portfolio h2,
+  #contact h2 {
+    overflow-wrap: anywhere;
   }
 
   main > section::before {

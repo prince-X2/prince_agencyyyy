@@ -10,7 +10,7 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="flex min-h-[94svh] items-center px-4 py-14 sm:px-10 sm:py-6 lg:px-14"
+      className="flex items-center px-4 py-14 sm:min-h-[94svh] sm:px-10 sm:py-6 lg:px-14"
     >
       <div className="mx-auto w-full">
         <p className="reveal text-base font-semibold uppercase tracking-[0.16em] text-[#1b7d79] sm:text-lg">
