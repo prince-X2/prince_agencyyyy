@@ -139,7 +139,7 @@ main > section::before {
     #0f2027 72%
   );
 
-  -webkit-background-clip: text;
+ -webkit-background-clip: text;
   color: transparent;
 }
 
