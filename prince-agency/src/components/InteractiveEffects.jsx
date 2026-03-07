@@ -20,7 +20,8 @@ export default function InteractiveEffects() {
       glow.style.top = `${event.clientY}px`;
     };
 
-    const revealElements = Array.from(document.querySelectorAll(".reveal"));
+    const revealElements = document.querySelectorAll(".reveal");
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -30,10 +31,11 @@ export default function InteractiveEffects() {
           }
         });
       },
-      { threshold: 0.2, rootMargin: "0px 0px -8% 0px" },
+      { threshold: 0.1 }
     );
 
-    revealElements.forEach((element) => observer.observe(element));
+    revealElements.forEach((el) => observer.observe(el));
+
     window.addEventListener("pointermove", onPointerMove);
 
     return () => {

@@ -6,7 +6,7 @@ import InteractiveEffects from "@/components/InteractiveEffects";
 
 export default function Home() {
   return (
-    <main className="overflow-x-clip">
+    <main>
       <InteractiveEffects />
       <Hero />
       <Services />

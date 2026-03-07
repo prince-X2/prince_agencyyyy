@@ -31,9 +31,9 @@ export default function Hero() {
 
   return (
     <section
-      id="home"
-      className="relative min-h-screen overflow-hidden px-4 py-14 sm:min-h-svh sm:px-10 sm:py-24 lg:px-14"
-    >
+  id="home"
+  className="relative min-h-svh overflow-visible px-4 py-14 sm:px-10 sm:py-24 lg:px-14"
+>
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-16 -left-20 h-72 w-72 rounded-full bg-[#1ca49f]/20 blur-3xl" />
         <div className="absolute right-0 top-32 h-80 w-80 rounded-full bg-[#ff8a4c]/20 blur-3xl" />
